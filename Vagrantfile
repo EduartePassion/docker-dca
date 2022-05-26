@@ -23,6 +23,7 @@ Vagrant.configure("2") do |config|
       end
       machine.vm.provision "shell", path: "provision.sh"
       machine.vm.provision "shell", inline: "hostnamectl set-hostname #{name}.docker-dca.example"
+      
     end
   end
 end
